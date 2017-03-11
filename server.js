@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 
 app.get('/article-one', function(req,res)
 {
- res.send('You have hit the page to display article one!');   
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
